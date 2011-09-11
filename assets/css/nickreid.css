@@ -64,6 +64,11 @@ body ul.menu li{
 }
 
 /*** COMMON ***/
+
+div.post,div.page,div.projects{
+	background:#FFF;
+}
+
 .entry-title, .page-title{
 	padding:7px 22px;
 	margin:0px 0px 4px;
@@ -82,7 +87,7 @@ h1.entry-title, h1.page-title{
 	text-decoration:none;
 }
 .entry-content, .entry-meta, .entry-utility{
-	margin:3px 12px 7px;
+	padding:3px 12px 7px;
 }
 
 
@@ -229,7 +234,6 @@ h1.entry-title, h1.page-title{
 	width:auto;
 	padding:0px;
 	margin:0px;
-	background:#FFF;
 }
 
 #content .navigation{
@@ -283,15 +287,19 @@ h1.entry-title, h1.page-title{
 	margin:0px;
 }
 
-.full.single #main #content .entry-title,.full #main #content .page-title{
+.js #container h1.entry-title,.js #container h1.page-title{
 	position:relative;
 	padding:0px;
 }
-.full.single #main #content .entry-title span, .full.single #main #content .page-title{
+.js #container h1.entry-title span, .js #container h1.page-title span{
 	position:absolute;
 	bottom:0px;
 	right:0px;
-	padding:7px;
+	padding:0px 7px 0px 0px;
+}
+.js #container h1.page-title span span{
+	position:static;
+	padding:0px;
 }
 
 /*** $HOME ***/
