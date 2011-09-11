@@ -60,13 +60,7 @@
 	                    edit_post_link(__('Edit', 'thematic'),'<span class="edit-link">','</span>') ?>
 	
 					</div>
-				</div><!-- .post -->
-				
-				<div id="portfolio" class="list entries">
-					<p>This is where the posts go</p>
-					
-				</div>
-	
+				</div><!-- .post -->	
 	        <?php
 	        
 	        thematic_belowpost();
@@ -78,7 +72,13 @@
 	
 			</div><!-- #content -->
 			
-			<?php thematic_belowcontent(); ?> 
+			<div id="portfolio" class="list entries">
+				<p>This is where the posts go</p>
+				
+			</div>
+			
+			
+			<?php thematic_belowcontent(); ?>
 			
 		</div><!-- #container -->
 
