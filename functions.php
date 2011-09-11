@@ -24,7 +24,11 @@ function add_nickreid_footer(){
 add_action('thematic_footer','add_nickreid_footer');
 
 function nickreid_init(){
-
+	if(function_exists('add_image_size')){ 
+		add_image_size( 'category-thumb', 300, 9999 );
+		add_image_size( 'featured-thumb', 0, 150, true );
+	}
+	
 	if ( function_exists('register_sidebar') ){
 		register_sidebar(array(
 			'name' => 'Nick Reid Header',
