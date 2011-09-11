@@ -44,9 +44,9 @@ a:hover,#access a:hover{
 }
 
 p{
-	font-size:12px;
+	font-size:1.1em;
 	margin:5px 0px 0px;
-	line-height:1.1em;
+	line-height:1em;
 }
 
 body .menu,body ul.menu{
@@ -63,10 +63,28 @@ body ul.menu li{
 	position:relative;
 }
 
-/*** TITLE ***/
-.entry-title{
+/*** COMMON ***/
+.entry-title, .page-title{
+	padding:7px 22px;
+	margin:0px 0px 4px;
 	font-family:Georgia,Times,Serif;
+	font-size:2em;
+	font-weight:bold;
+	background:none repeat scroll 0 0 #ee98bd;
+	color:#FFF;
 }
+
+h1.entry-title, h1.page-title{
+	background-color:#ED3C95;
+}
+.entry-title a{
+	color:#FFF;
+	text-decoration:none;
+}
+.entry-content, .entry-meta, .entry-utility{
+	margin:3px 12px 7px;
+}
+
 
 /** STRUCTURE **/
 
@@ -100,7 +118,6 @@ body ul.menu li{
 	overflow:hidden;
 	margin:0px auto;
 	position:relative;
-	border-bottom:#AAA 3px solid;
 }
 
 #header #branding{
@@ -141,6 +158,7 @@ body ul.menu li{
 	width:183px;
 	background-color:#DDD;
 	overflow:hidden;
+	border-bottom:#AAA 3px solid;
 }
 
 #header #access .skip-link{
@@ -217,26 +235,6 @@ body ul.menu li{
 #content .navigation{
 	display:none;
 }
-
-#content .entry-title,#content .page-title{
-	padding:7px 22px;
-	margin:0px 0px 4px;
-	font-size:2em;
-	font-weight:bold;
-	background:none repeat scroll 0 0 #ee98bd;
-	color:#FFF;
-}
-#content h1.entry-title,#content h1.page-title{
-	background-color:#ED3C95;
-}
-#content .entry-title a{
-	color:#FFF;
-	text-decoration:none;
-}
-#content .entry-content,#content .entry-meta,#content .entry-utility{
-	margin:3px 12px 7px;
-}
-
 
 /*** $FULL ***/
 
@@ -315,8 +313,17 @@ body ul.menu li{
 	left:0px;
 	width:370px;
 	height:230px;
-	background:url("../i/nickreid-logo-big.jpg") no-repeat scroll center center #ED3C95;
+	background:url("../i/nickreid-logo-big.png") no-repeat scroll center center #ED3C95;
 	border-bottom:3px #AAA solid
+}
+.home #header #branding #blog-title a{
+	width:370px;
+	height:230px;
+}
+
+#header #content .entry-title, #header #content .page-title{
+	font-size:1.5em;
+	padding:3px 22px 2px;
 }
 
 /*** $PORTFOLIO ***/
