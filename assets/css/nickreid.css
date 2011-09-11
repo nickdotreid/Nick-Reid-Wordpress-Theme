@@ -227,7 +227,7 @@ body ul.menu li{
 	color:#FFF;
 }
 #content h1.entry-title,#content h1.page-title{
-	background-color:#EA5C98;
+	background-color:#ED3C95;
 }
 #content .entry-title a{
 	color:#FFF;
@@ -314,8 +314,9 @@ body ul.menu li{
 	top:0px;
 	left:0px;
 	width:370px;
-	height:260px;
-	background:url("../i/nickreid-logo-big.jpg") no-repeat scroll center center transparent;
+	height:230px;
+	background:url("../i/nickreid-logo-big.jpg") no-repeat scroll center center #ED3C95;
+	border-bottom:3px #AAA solid
 }
 
 /*** $PORTFOLIO ***/
