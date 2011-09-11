@@ -73,8 +73,10 @@
 			</div><!-- #content -->
 			
 			<div id="portfolio" class="list entries">
-				<p>This is where the posts go</p>
-				
+				<?	query_posts( array ( 'post_type' => array('post','projects'),'category_name' => 'Featured', 'posts_per_page' => -1 ) );	?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'content','preview'); ?>
+				<?php endwhile; ?>
 			</div>
 			
 			
