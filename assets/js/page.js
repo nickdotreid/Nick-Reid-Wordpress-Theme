@@ -16,6 +16,9 @@ jQuery(document).ready(function(){
 				jQuery("#container").css('padding-top',header_height+"px");
 				jQuery("#content h1.entry-title,#content h1.page-title").width(jQuery("#container").width() - header_width).css("position","absolute").css("top","0px").css("left",header_width+"px").height(header_height).wrapInner("<span />")
 			}
+			if(jQuery('#container').hasClass('portfolio')){
+				jQuery("#content").appendTo("#header")
+			}
 		}
 	}).resize();
 });

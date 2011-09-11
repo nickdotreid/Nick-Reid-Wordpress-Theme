@@ -319,18 +319,11 @@ body ul.menu li{
 }
 
 /*** $PORTFOLIO ***/
-.page-template-portfolio-php.home.full.js #header{
-	float:none;
-	margin:0px auto;
-}
 
 .page-template-portfolio-php.home.full.js #main #container.portfolio{
-	width:370px;
-	position:static;
+	width:auto;
 }
 
 .page-template-portfolio-php.home.full.js #container.portfolio #portfolio{
-	position:absolute;
-	top:0px;
-	left:0px;
+	position:relative;
 }
