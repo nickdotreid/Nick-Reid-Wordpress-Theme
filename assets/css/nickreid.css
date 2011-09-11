@@ -1,0 +1,319 @@
+/**
+
+==CONTENTS==
+
+== FALL BACK ==
+$GENERAL
+$HEAD
+$FOOT
+$CONTENT
+
+== $FULL ==
+
+== $HOME ==
+
+**/
+
+
+/** $GENERAL **/
+
+body{
+	font-family:"Geneva",verdana,arial,sans-serif;
+	font-size:11px;
+	color:#444;
+	background-color:#DDD;
+	margin:0px;
+	min-width:370px;
+}
+
+br.cb{
+	line-height:0px;
+	height:0px;
+	display:block;
+	float:none;
+	clear:both;
+}
+
+a, a:visited{
+	color:#33d;
+	text-decoration:none;
+}
+a:hover,#access a:hover{
+	text-decoration:underline;
+	color:#00F;
+}
+
+p{
+	font-size:12px;
+	margin:5px 0px 0px;
+	line-height:1.1em;
+}
+
+body .menu,body ul.menu{
+	width:auto;
+	margin:0px;
+	padding:0px;
+}
+body ul.menu li{
+	list-style-type:none;
+}
+
+#page{
+	margin:0px;
+	position:relative;
+}
+
+/*** TITLE ***/
+.entry-title{
+	font-family:Georgia,Times,Serif;
+}
+
+/** STRUCTURE **/
+
+#wrapper #main,.js #wrapper{
+	background:#F1F1F1 url('../i/wrapper-bottom.jpg') repeat-x bottom left;
+	padding:0px 20px 7px;
+}
+.js #wrapper #main{
+	background:transparent;
+	padding:0px;
+}
+
+#wrapper #footer{
+	background:#DDD;
+	border:0px;
+	padding:0px;
+}
+
+#main{
+	width:auto;
+	margin:0px auto;
+	padding:0px;
+}
+
+
+/**  HEAD **/
+
+#header{
+	width:370px;
+	height:130px;
+	overflow:hidden;
+	margin:0px auto;
+	position:relative;
+	border-bottom:#AAA 3px solid;
+}
+
+#header #branding{
+	padding:0px;
+	width:auto;
+}
+
+#header #blog-description{
+	display:none;
+}
+
+#header #branding #blog-title{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:187px;
+	height:130px;
+	background:url("../i/nickreid-logo-small.jpg") no-repeat scroll center center transparent;
+}
+#header #branding #blog-title a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:187px;
+	height:130px;
+	cursor:pointer;
+	text-indent:-700px;
+	overflow:hidden;
+}
+
+#header #access{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:187px;
+	height:130px;
+	width:183px;
+	background-color:#DDD;
+	overflow:hidden;
+}
+
+#header #access .skip-link{
+	position:absolute;
+	top:0px;
+	left:300px;
+}
+
+#header .menu{
+	width:auto;
+	font-size:1.25em;
+}
+
+#header #access .menu .sf-menu{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	width:auto;
+}
+
+#header #access .menu .sf-menu li a{
+	display:block;
+	float:left;
+	width:80px;
+	height:130px;
+	text-align:center;
+	padding:110px 0px 5px;
+}
+#header #access .menu .sf-menu li a:hover{
+	background:transparent url('../i/white70.png');
+}
+
+/*** $FOOT ****/
+#footer{
+	padding:0px 22px;
+}
+
+#siteinfo{
+	width:auto;
+	margin:7px 0px;
+}
+
+#footer .widget{
+	float:left;
+	margin:0px 7px 3px 0px;
+}
+
+#footer .widget.widget_categories h4{
+	display:none;
+}
+#footer .widget.widget_categories ul{
+	margin:0px;
+	padding:0px;
+}
+#footer .widget.widget_categories li{
+	list-style-type:none;
+}
+
+/*** $CONTENT ***/
+
+#container{
+	margin:0px auto;
+	width:370px;
+	float:none;
+	position:relative;
+}
+#content{
+	width:auto;
+	padding:0px;
+	margin:0px;
+	background:#FFF;
+}
+
+#content .navigation{
+	display:none;
+}
+
+#content .entry-title,#content .page-title{
+	padding:7px 22px;
+	margin:0px 0px 4px;
+	font-size:2em;
+	font-weight:bold;
+	background:none repeat scroll 0 0 #ee98bd;
+	color:#FFF;
+}
+#content h1.entry-title,#content h1.page-title{
+	background-color:#EA5C98;
+}
+#content .entry-title a{
+	color:#FFF;
+	text-decoration:none;
+}
+#content .entry-content,#content .entry-meta,#content .entry-utility{
+	margin:3px 12px 7px;
+}
+
+
+/*** $FULL ***/
+
+.full #header{
+	position:absolute;
+	z-index:12;
+	top:0px;
+	left:0px;
+	width:187px;
+	height:auto;
+	margin:0px 7px 7px 0px;
+}
+
+.full #header #branding #blog-title,.full #header #access{
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+.full #header #access{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+.full #header #access .skip-link{
+	left:500px;
+}
+.full #header .menu{
+	font-size:1em;
+}
+.full #header #access .menu .sf-menu li a{
+	padding:7px 3px 3px;
+	height:auto;
+}
+
+.full #main #container{
+	width:530px;
+	margin:0px auto;
+}
+
+.page-template-template-page-fullwidth-php #content{
+	width:auto;
+	margin:0px;
+}
+
+.full.single #main #content .entry-title,.full #main #content .page-title{
+	position:relative;
+	padding:0px;
+}
+.full.single #main #content .entry-title span, .full.single #main #content .page-title{
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	padding:7px;
+}
+
+/*** $HOME ***/
+
+.home #header,.home.full #header{
+	width:370px;
+	position:relative;
+	float:left;
+}
+
+.home #header #branding{
+	width:auto;
+}
+
+.home #header #branding #blog-title{
+	display:block;
+	position:static;
+	top:0px;
+	left:0px;
+	width:370px;
+	height:260px;
+	background:url("../i/nickreid-logo-big.jpg") no-repeat scroll center center transparent;
+}
