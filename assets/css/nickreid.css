@@ -343,3 +343,42 @@ h1.entry-title, h1.page-title{
 .page-template-portfolio-php.home.full.js #container.portfolio #portfolio{
 	position:relative;
 }
+
+.full #container .list .preview{
+	width:270px;
+	height:150px;
+	position:relative;
+	overflow:hidden;
+	display:block;
+	float:left;
+	margin:3px 7px 4px 0px;
+}
+.list .preview .entry-title{
+	padding-left:7px;
+	padding-right:7px;
+	margin:0px;
+	font-size:1.6em;
+}
+.full.js .list .preview .entry-nav{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	z-index:3;
+	width:100%;
+	background-color:#DDD;
+	border-top:#AAA 1px solid;
+	padding:3px 3px 2px;
+}
+.full.js .list .preview.hoverable .thumbnail{
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:1;
+}
+.full.js .list .preview.hoverable .entry-header{
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:3;
+	width:100%;
+}

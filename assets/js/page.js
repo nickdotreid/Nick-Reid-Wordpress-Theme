@@ -19,6 +19,18 @@ jQuery(document).ready(function(){
 			if(jQuery('#container').hasClass('portfolio')){
 				jQuery("#content").appendTo("#header")
 			}
+			jQuery(".preview .thumbnail").each(function(){
+				thumbnail = jQuery(this);
+				preview = thumbnail.parents(".preview:first");
+				preview.addClass("hoverable");
+				preview.width(thumbnail.width());
+				jQuery('.entry-summary',preview).css('margin-top',jQuery('.entry-header',preview).height()+"px");
+			})
+			jQuery('body').delegate('.preview','mouseenter',function(){
+				jQuery(".thumbnail",jQuery(this)).css('opacity',0.2);
+			}).delegate('.preview','mouseleave',function(){
+				jQuery(".thumbnail",jQuery(this)).css('opacity',1);
+			})
 		}
 	}).resize();
 });
